@@ -1,0 +1,15 @@
+<h1>Funcionou! Big D Rocks</h1>
+
+
+<!-- Com o ngIf vou fazer o condicional com a variavel trazida desde o TS -->
+<div *ngIf = "cursos.length==0"> 
+    <p>Nenhum curso está disponível</p>
+</div>
+<div *ngIf = "cursos.length!=0"> 
+    <p>Temos esses cursos:</p>
+
+    <ul>
+        <li *ngFor="let curso_individual of cursos">{{curso_individual}}</li>
+    </ul>
+
+</div>
